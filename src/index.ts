@@ -1,3 +1,4 @@
+import { patchGlobalFetch } from "./lib/fetch.ts";
 import type { RouteHandler } from "./lib/route.ts";
 import { getSolidSession } from "./lib/session.ts";
 import callback from "./routes/callback.ts";
@@ -15,6 +16,8 @@ const routes = new Map<string, RouteHandler>([
   ["/logout", logout],
   ["/debug", debug],
 ]);
+
+patchGlobalFetch();
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {

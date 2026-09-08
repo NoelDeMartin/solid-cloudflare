@@ -9,3 +9,14 @@ id = "f4a9fd887446423fb3cfdf9f0b9030b1"
 
 [vars]
 ENVIRONMENT = "production"
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
+[observability.traces]
+enabled = true
+head_sampling_rate = 1
+persist = true
