@@ -1,10 +1,11 @@
 import type { RouteHandler } from "./lib/route.ts";
+import { getSolidSession } from "./lib/session.ts";
 import callback from "./routes/callback.ts";
+import debug from "./routes/debug.ts";
 import index from "./routes/index.ts";
 import login from "./routes/login.ts";
 import logout from "./routes/logout.ts";
 import work from "./routes/work.ts";
-import { getSolidSession } from "./lib/session.ts";
 
 const routes = new Map<string, RouteHandler>([
   ["/", index],
@@ -12,6 +13,7 @@ const routes = new Map<string, RouteHandler>([
   ["/callback", callback],
   ["/work", work],
   ["/logout", logout],
+  ["/debug", debug],
 ]);
 
 export default {

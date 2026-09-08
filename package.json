@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --var ENVIRONMENT:development",
     "build": "tsc && wrangler build",
     "wrangler:types": "wrangler types src/types/worker.d.ts"
   },

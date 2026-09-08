@@ -6,3 +6,6 @@ compatibility_flags = ["nodejs_compat"]
 [[kv_namespaces]]
 binding = "SOLID_SESSIONS"
 id = "f4a9fd887446423fb3cfdf9f0b9030b1"
+
+[vars]
+ENVIRONMENT = "production"
