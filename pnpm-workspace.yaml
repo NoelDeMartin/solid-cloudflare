@@ -6,6 +6,8 @@ catalog:
   vite-plus: 0.3.0
 overrides:
   vite@*: "catalog:"
+patchedDependencies:
+  object-hash@2.2.0: patches/object-hash@2.2.0.patch
 peerDependencyRules:
   allowAny:
     - vite

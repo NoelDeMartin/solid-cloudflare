@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index 6396ae6f8e73646b015fcefea4e716c35f48d89b..7b78603f0a2fdce6c971f690228904ff591d5d16 100644
+--- a/package.json
++++ b/package.json
+@@ -48,6 +48,5 @@
+   "engines": {
+     "node": ">= 6"
+   },
+-  "main": "./index.js",
+-  "browser": "./dist/object_hash.js"
++  "main": "./index.js"
+ }

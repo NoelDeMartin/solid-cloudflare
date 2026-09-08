@@ -7,6 +7,9 @@
     "build": "tsc && wrangler build",
     "wrangler:types": "wrangler types src/types/worker.d.ts"
   },
+  "dependencies": {
+    "@inrupt/solid-client-authn-node": "^5.0.0"
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260907.1",
     "@types/node": "^26.4.1",
