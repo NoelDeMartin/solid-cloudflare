@@ -1,7 +1,7 @@
 import { defineRoute } from "../lib/route.ts";
 
 export default defineRoute(async ({ env }) => {
-  if (env.ENVIRONMENT !== "development") {
+  if (String(env.ENVIRONMENT) !== "development") {
     return new Response("Not Found", { status: 404 });
   }
 
