@@ -1,0 +1,8 @@
+name = "solid-cloudflare"
+main = "src/index.ts"
+compatibility_date = "2026-09-08"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "SOLID_SESSIONS"
+id = "f4a9fd887446423fb3cfdf9f0b9030b1"

@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - uses: voidzero-dev/setup-vp@v1.18.0
+        with:
+          node-version-file: '.node-version'
+          cache: true
+
+      - name: Install Dependencies
+        run: vp install
+
+      - name: Lint
+        run: vp check
+
+      - name: Build
+        run: npm run build
